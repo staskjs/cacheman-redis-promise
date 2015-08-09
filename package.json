@@ -1,0 +1,29 @@
+{
+  "name": "cacheman-redis-promise",
+  "version": "1.0.0",
+  "description": "Extension of cacheman-redis that uses promises and is able to disable cache using stub-methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragothefiery/cacheman-redis-promise"
+  },
+  "keywords": [
+    "redis",
+    "cache",
+    "promise"
+  ],
+  "author": "Stas Karpov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragothefiery/cacheman-redis-promise/issues"
+  },
+  "homepage": "https://github.com/dragothefiery/cacheman-redis-promise",
+  "dependencies": {
+    "cacheman-redis": "^0.2.0",
+    "q": "^1.4.1",
+    "redis": "^0.12.1"
+  }
+}
