@@ -1,6 +1,6 @@
 {
   "name": "cacheman-redis-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extension of cacheman-redis that uses promises and is able to disable cache using stub-methods",
   "main": "index.js",
   "scripts": {
