@@ -1,6 +1,6 @@
 # cacheman-redis-primose
 
-Basically an extension of cacheman-redis module that uses promises and is able to disable caching without messing up all code [cacheman-redis](https://github.com/cayasso/cacheman-redis).
+Basically an extension of [cacheman-redis](https://github.com/cayasso/cacheman-redis) module that uses promises and is able to disable caching without messing up all code.
 
 ## Instalation
 
@@ -23,14 +23,15 @@ cache.set('some key', 'hello there').then(function(data) {
 	console.log('value deleted');
 });
 
-// Or you can use fetch to simplify common cache operations (like get, then check and then set if there is no value)
+// Or you can use fetch to simplify common cache operations
+// (like get, then check and then set if there is no value)
 
 var fn = function() {
 	return 'hey there';
-	// Or you can also return a some promise here
+	// Or you can also return a promise here
 };
 
-// fn will be executed only if there are no value under 'some key' key
+// fn will be executed only if there is no value under 'some key' key
 // and its result will be put into cache under this key
 // But if there was value under the key, it will be returned without executing fn
 cache.fetch('some key', fn).then(function(data) {
