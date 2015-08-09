@@ -1,4 +1,4 @@
-# cacheman-redis-primose
+# cacheman-redis-promise
 
 Basically an extension of [cacheman-redis](https://github.com/cayasso/cacheman-redis) module that uses promises and is able to disable caching without messing up all code.
 
